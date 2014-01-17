@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns='http://www.w3.org/1999/xhtml' 
+xmlns:b='http://www.google.com/2005/gml/b' 
+xmlns:data='http://www.google.com/2005/gml/data' 
+xmlns:expr='http://www.google.com/2005/gml/expr'>
+	<head>
+		<b:skin>
+		<![CDATA[
+			#container { 
+                width: 90%; 
+                margin: 0 auto;
+                background-color: #ffc8dd; /* Apenas para demo, !apagar linha! */
+            }
+            #content {
+                width: 70%;
+                float: left;
+                 background-color: #85ff80; /* Apenas para demo, !apagar linha! */
+            }
+            #swidget {
+                width: 29%;
+                float: right;
+                background-color: #fbffc8; /* Apenas para demo, !apagar linha! */
+            }
+            #widgetsb {
+                width: 100%;
+                float: left;
+                background-color: #c8f4ff; /* Apenas para demo, !apagar linha! */
+            }
+            #rodape {
+                width: 100%;
+                float: left;
+                background-color: #ffc980; /* Apenas para demo, !apagar linha! */
+            }
+		]]>
+		</b:skin>
+	</head>
+	<body>
+		<div id="container">
+			<b:section class='menu' id='menu' showaddelement='yes'></b:section>
+			
+			<div id="content">
+				<b:section class='conteudos' id='conteudos' showaddelement='yes'>
+					<b:widget id="Blog1" locked="false" title="Artigos" type="Blog"/>
+				</b:section>
+			</div>	
+			<div id="swidget">
+				<b:section class='widgets' id='widgets' showaddelement='yes'></b:section>
+			</div>
+			
+			<b:section class='widgetsb' id='widgetsb' showaddelement='yes'></b:section>
+			
+			<b:section class='rodape' id='rodape' showaddelement='no'>
+				<b:widget id="Attribution1" locked="false" title="Rodape" type="Attribution"/>
+			</b:section>
+		</div>
+	</body>
+</html>
